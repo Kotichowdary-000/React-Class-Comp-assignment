@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+// ❌ removed wrong import (import ColorChange from "../../App")
 
-class App extends Component {
+class ColorChange extends Component {
   constructor() {
     super();
     this.state = { color: "red" };
@@ -39,4 +40,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default ColorChange;

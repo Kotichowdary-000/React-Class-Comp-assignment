@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-class App extends Component {
+
+class ToDoList extends Component {
     constructor() {
         super();
         this.state = {
@@ -145,4 +146,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default ToDoList;
