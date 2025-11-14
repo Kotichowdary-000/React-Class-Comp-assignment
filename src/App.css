@@ -1,0 +1,28 @@
+/* #root{
+  background-color: rgb(2, 91, 113);
+  height: 100vh;
+}
+.heading{
+  text-align: center;
+  color: #fbfbfb;
+  text-decoration: underline;
+
+}
+
+.Values{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 70vh;
+  margin-top: 20px;
+}
+
+#ip{
+  height: 40px;
+  width: 400px;
+}
+#btn{
+  height: 30px;
+  width: 100px;
+  margin-left: 25vh;
+} */
