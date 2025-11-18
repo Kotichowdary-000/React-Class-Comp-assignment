@@ -48,7 +48,6 @@ class ContactUs extends Component {
                 firstName: this.state.firstName,
                 lastName: this.state.lastName,
                 email: this.state.email,
-                password: this.state.password,
                 phoneNumber: this.state.phoneNumber
             });
 
@@ -56,11 +55,10 @@ class ContactUs extends Component {
                 firstName: "",
                 lastName: "",
                 email: "",
-                password: "",
                 phoneNumber: "",
                 firstNameErr: "",
                 lastNameErr: "",
-                emailErr: "", r: "",
+                emailErr: "",
                 phoneNumberErr: "",
             })
         }
@@ -109,14 +107,7 @@ class ContactUs extends Component {
                             {
                                 this.state.emailErr && <p className="text-danger">{this.state.emailErr}</p>
                             }
-                            <input
-                                type="password"
-                                id="password"
-                                className="form-control mb-2"
-                                placeholder="Enter your password"
-                                value={this.state.password}
-                                onChange={this.handleChange}
-                            />
+        
                             {
                                 this.sr && <p className="text-danger">{this.sr}</p>
                             }

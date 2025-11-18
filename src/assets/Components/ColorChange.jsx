@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// ❌ removed wrong import (import ColorChange from "../../App")
+
 
 class ColorChange extends Component {
   constructor() {
