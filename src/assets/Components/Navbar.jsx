@@ -5,14 +5,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <img
-                    src="https://lms.achieversit.com/assets/images/logo.png"
-                    style={{ height: "40px", width: "100px", }}
-                    alt=""
-                 
-                />
-
-
+            
                 <Link className="navbar-brand" to="/">Navbar</Link>
 
                 <div className="collapse navbar-collapse" id="navbarNav">
