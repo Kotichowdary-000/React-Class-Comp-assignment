@@ -67,7 +67,7 @@ class ContactUs extends Component {
     render() {
         return (
             <div className="container  text-white p-4 rounded">
-                <h2>ContactUs</h2>
+                <h2 className='text-warning text-center mb-4 mt-3'>ContactUs</h2>
                 <div className="row">
                     <div className="col-lg-4"></div>
                     <div className="col-lg-4">

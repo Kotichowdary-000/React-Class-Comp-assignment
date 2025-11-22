@@ -4,13 +4,18 @@ import './index.css'
 import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom'
+import ThemeProvider from './Components/ThemeProvider.jsx';
+
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-    <App />
+     <ThemeProvider />
+           <App />
+           <ThemeProvider/>
+     
     </BrowserRouter>
-
   </StrictMode>
 )
+  

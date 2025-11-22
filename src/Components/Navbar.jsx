@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "./ThemeProvider";
 
 const Navbar = () => {
+    const [theme, themeChanger] = useContext(ThemeContext);
+    console.log(theme);
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className={`navbar navbar-expand-lg ${theme === "light" ? "navbar-light bg-light" : "navbar-dark bg-dark"}`}>
+
             <div className="container-fluid">
-            
+
                 <Link className="navbar-brand" to="/">Navbar</Link>
 
                 <div className="collapse navbar-collapse" id="navbarNav">
@@ -26,6 +31,18 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link to="/contact" className="nav-link">Contact</Link>
                         </li>
+                        <button
+                            onClick={themeChanger}
+                            className={`btn ${theme === "light" ? "btn-outline-dark" : "btn-outline-light"} ms-3`}
+                        >
+                            Switch to {theme === "light" ? "dark" : "light"}
+                        </button>
+
+
+                        {/* <li className="nav-item">
+                            <Link to="/custohook" className="nav-link">Custom Hook</Link>
+                        </li> */}
+
 
                     </ul>
                 </div>

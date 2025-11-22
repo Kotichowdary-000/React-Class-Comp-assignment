@@ -1,0 +1,9 @@
+body.light {
+  background-color: white;
+  color: black;
+  height:100vh;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}

@@ -1,25 +1,29 @@
 // src/App.js
 import React, { Fragment } from "react";
 import "./App.css";
-import StatusMessage from "./assets/Components/StatusMessage";
-import ContactUs from "./assets/Components/ContactUs";
-import ToDoList from "./assets/Components/ToDoList";
-import ColorChange from "./assets/Components/ColorChange";
-import Routers from "./routes/Routers";
-import Navbar from "./assets/Components/Navbar";
-// import { ThemeProvider } from "./context/ThemeContext";
+// import StatusMessage from "./Components/StatusMessage";
+// import ContactUs from "./Components/ContactUs";
+// import ToDoList from "./Components/ToDoList";
+// import ColorChange from "./Components/ColorChange";
+// import Routers from "./routes/Routers";
+// import Navbar from "./Components/Navbar";
+// import ThemeProvider from "./Components/ThemeProvider";
+// import "./Components/light.css";
+// import "./Components/dark.css";
+import CountWords from "./Components/CountWords";
+
+
 
 function App() {
   return (
-
       <Fragment>
-        <Navbar />
+{/* <ThemeProvider>
+   <Navbar />
         <Routers />
-        {/* You can still render other components here if needed */}
-        {/* <StatusMessage /> */}
-        {/* <ContactUs /> */}
-        {/* <ToDoList /> */}
-        {/* <ColorChange /> */}
+  </ThemeProvider> */}
+  <CountWords />
+
+       
       </Fragment>
   );
 }
